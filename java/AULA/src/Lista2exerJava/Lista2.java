@@ -6,43 +6,46 @@ public class Lista2 {
 		Scanner leia = new Scanner(System.in);
 		/*EXERCICIO-1
 		int num1, num2, num3;
-		System.out.println("Veremos qual é o maior valor! ");
-		System.out.println("Escreva um número: ");
+		System.out.println("Veremos qual Ã© o maior valor! ");
+		System.out.println("Escreva um nÃºmero: ");
 		num1 = leia.nextInt();
-		System.out.println("Escreva outro número: ");
+		System.out.println("Escreva outro nÃºmero: ");
 		num2 = leia.nextInt();
-		System.out.println("Escreva mais um número: ");
+		System.out.println("Escreva mais um nÃºmero: ");
 		num3 = leia.nextInt();
 		
 		
 		if(num1>num2 && num1>num3) {
-		System.out.println(num1 + " é o maior valor digitado");
+		System.out.println(num1 + " Ã© o maior valor digitado");
 		}
 		else if(num2>num1 && num2>num3) {
-		System.out.println(num2 + " é o maior valor digitado");
+		System.out.println(num2 + " Ã© o maior valor digitado");
 		}
 		else {
-			System.out.println(num3 + " é o maior valor digitado");
+			System.out.println(num3 + " Ã© o maior valor digitado");
 		}
 		*/
 		/*EXERCICIO 2
-		int num1,num2,num3, ordem;
-		System.out.println("Veremos qual é a ordem crescente! ");
-		System.out.println("Escreva um número: ");
+		int num1,num2,num3;
+
+		System.out.println("");
 		num1 = leia.nextInt();
-		System.out.println("Escreva outro número: ");
+		System.out.println("");
 		num2 = leia.nextInt();
-		System.out.println("Escreva mais um número: ");
+		System.out.println("");
 		num3 = leia.nextInt();
-		
-		if(num1 < num2 && num1 < num3) {
-		System.out.println("A ordem é: " + num1 + num2+ num3);
+
+		if(num1 == num2 && num2 == num3){
+		System.out.printf("1 - %d", 2 - %d, 3 - %d", num1, num2, num3);
 		}
-		else if(num2 > num1 && num2 < num3) {
-		System.out.println("A ordem é: " + num2 + num1+ num3);
+		else if(num1>=num2 && num2>=num3){
+		System.out.printf("1 - %d", 2 - %d, 3 - %d", num3, num2, num1);
 		}
-		else if(num3 > num2 && num3 < num2 && num3 > num1 ) {
-		System.out.println("A ordem é: " + num3 + num2+ num1);
+		else if(num1>=num2 && num3>=num2 && num1>=num3){
+		System.out.printf("1 - %d", 2 - %d, 3 - %d", num2, num3, num1);
+		}
+		else if(num2>=num1 && num1>=num3 && num3>=num2){
+		System.out.printf("1 - %d", 2 - %d, 3 - %d", num3, num1, num2);
 		}
 		*/
 		/*
@@ -63,7 +66,7 @@ public class Lista2 {
 
 		}
 		else {
-			System.out.println("Você é Cringe!");
+			System.out.println("VocÃª Ã© Cringe!");
 		}
 		*/
 		/* Exercicio4
@@ -71,24 +74,24 @@ public class Lista2 {
 		for(int i = 0; i<2; i++) {
 			
 		
-		System.out.println("Escreva um número: ");
+		System.out.println("Escreva um nÃºmero: ");
 		teste = leia.nextDouble();
 
 		
 		 if(teste < 0) {
-			System.out.println(teste + " é um número negativo e inválido \n");
+			System.out.println(teste + " Ã© um nÃºmero negativo e invÃ¡lido \n");
 		 
 		}
 		else if (teste == 0){
-		System.out.println(teste + " é neutro \n");
+		System.out.println(teste + " Ã© neutro \n");
 		}
 		else if(teste % 2 == 0) {
 			raiz = Math.sqrt(teste);
-			System.out.println(teste + " é par e sua raiz quadrada é: " + raiz );
+			System.out.println(teste + " Ã© par e sua raiz quadrada Ã©: " + raiz );
 		}
 		else{
 			potencia = Math.pow(teste, 2.0);
-			System.out.println(teste + " é impar e sua potência é: " + potencia); 
+			System.out.println(teste + " Ã© impar e sua potÃªncia Ã©: " + potencia); 
 		}
 	}
 	*/
