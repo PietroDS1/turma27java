@@ -116,7 +116,7 @@ public class LaçosRepetição {
 		
 		System.out.println("Escreva varios número e saia pressionando 0: \n");
 		System.out.printf("A média dos números divisíveis por 3 é: %d", media);
-	
+	//ME APAGUE
 	}
 
 }
