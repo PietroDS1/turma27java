@@ -18,9 +18,15 @@ public class ClienteMain {
 		
 		//ação
 		cliente1.racaNBJ();
-		System.out.printf("Seu sexo é: ",cliente1.sexoMasculino());
-		
-
+		System.out.println("\n");
+		cliente1.altura();
+		System.out.println("\n");
+		cliente1.tipoCabelo();
+		System.out.println("\n");
+		cliente1.sexoMasculino();
+		System.out.println("\n");
+		cliente1.deficiencia();
+		System.out.println("\n");
 	}
 
 }
