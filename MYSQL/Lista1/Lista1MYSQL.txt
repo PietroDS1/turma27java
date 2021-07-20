@@ -1,0 +1,84 @@
+EXERCÍCIO 1
+Código:
+create database funcionarios;
+use db_funcionarios;
+create table func(
+id bigint(5) auto_increment,
+nome varchar(20) not null,
+deficiencia boolean,
+salario decimal(10,2),
+idade bigint(3),
+primary key (id)
+);
+insert into func (nome, deficiencia, salario, idade) values("Pietro", false, 10000.00, 18);
+insert into func (nome, deficiencia, salario, idade) values("Lukete", true, 80000.00, 29 );
+insert into func (nome, deficiencia, salario, idade) values("Paulo", false, 4000.00,20 );
+insert into func (nome, deficiencia, salario, idade) values("Milena", true, 50000.00,28);
+insert into func (nome, deficiencia, salario, idade) values("Joaozinho", false, 300.00,99);
+select * from func where salario > 2000;
+select * from func where salario < 2000;
+UPDATE `funcionarios`.`func` SET `salario` = '450.00', `idade` = '80' WHERE (`id` = '5');
+---------------------------------------------------------------------------------------------------------------------------
+
+EXERCÍCIO 2
+Código:
+create database db_ecommerce;
+use db_ecommerce;
+create table tb_stats(
+id bigint(3) auto_increment,
+nome varchar(20) not null,
+estoque bigint(3),
+preco double(5,0),
+encomendar boolean,
+primary key (id)
+);
+select * from tb_stats;
+insert into tb_stats (nome, estoque, preco, encomendar) values("Uva", 40, 10, false);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Maça", 28, 3, false);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Banana", 2, 40, false);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Pera", 47, 2, true);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Pessego", 18, 7, false);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Jaca", 37, 9, false);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Figo", 63, 3, true);
+insert into tb_stats (nome, estoque, preco, encomendar) values("Acerola", 77, 7, true);
+select * from tb_stats where nota > 500;
+select * from tb_stats where nota < 500;
+
+UPDATE `db_ecommerce`.`tb_stats` SET `nome` = 'faca' WHERE (`id` = '1');
+select * from tb_stats;
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+EXERCÍCIO 3
+Código:
+create database db_estudantes;
+use db_alunos;
+create table tb_alunos(
+id bigint(3) auto_increment,
+nome varchar(20) not null,
+sala bigint(3),
+mensalidade double(5,0),
+presenca boolean,
+primary key (id)
+);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Pietro", 27, 1000, true);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Luan", 27, 500, true);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Lukete", 27, 500, true);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Joaozinho", 27, 2000, false);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Mariazinha", 27, 100, true);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Tortuguita", 28, 5000, false);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Pamela", 24, 600, false);
+insert into tb_alunos (nome, sala, mensalidade, presenca) values("Epaminondas", 20, 1000, true);
+select * from tb_alunos where nota >7;
+select * from tb_alunos where nota <7;
+UPDATE `db_estudantes`.`tb_alunos` SET `sala` = '29' WHERE (`id` = '1');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '10' WHERE (`id` = '1');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '2' WHERE (`id` = '2');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '8' WHERE (`id` = '3');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '4' WHERE (`id` = '4');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '10' WHERE (`id` = '5');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '10' WHERE (`id` = '6');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '3' WHERE (`id` = '7');
+UPDATE `db_estudantes`.`tb_alunos` SET `nota` = '5' WHERE (`id` = '8');
+---------------------------------------------------------------------------------------------------------------------------
