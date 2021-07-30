@@ -1,0 +1,5 @@
+package com.Exercicio.MinhaLojaDeGames.repository;
+
+public interface GamesRepositorio {
+
+}
